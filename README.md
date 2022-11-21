@@ -1,10 +1,12 @@
-# CNB Custom Action Events
+# scheduled-payment-order-events
 
-This project contains custom action event definitions that can be consumed by the `actions` capability.
+This project contains event definitions that will be emitted from the scheduled-payment-order-executor
 
 
 This project defines events for the following:
-- `AccountBalanceSnapshotEvent`
+- `ScheduledPaymentOrderExecutedEvent` - Emitted when an single scheduled payment order is processed.
+- `ScheduledPaymentOrderJobCompletedEvent` - Emitted when the scheduler process kicks off.
+- `ScheduledPaymentOrderJobStartEvent` - Emitted when the scheduler process is started
 
 ### Documentation:
 https://community.backbase.com/documentation/ServiceSDK/latest/use_events
