@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "amount": {
+      "type": "number",
+      "description": "Scheduled payment amount"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Scheduled payment currency"
+    },
+    "originatorAccountName": {
+      "type": "string",
+      "description": "The name of the originator (from) account"
+    },
+    "counterpartyAccountName": {
+      "type": "string",
+      "description": "The name of the counterparty (to) account"
+    },
+    "executionDate": {
+      "type": "string",
+      "format": "date",
+      "description": "The scheduled payment order's execution date"
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the scheduled payment oder's execution"
+    },
+    "reasonCode": {
+      "type": "string",
+      "description": "The reason code"
+    },
+    "reasonText": {
+      "type": "string",
+      "description": "The reason code"
+    },
+    "errorDescription": {
+      "type": "string",
+      "description": "The error description"
+    }
+  },
+  "required": [
+    "amount",
+    "currency",
+    "originatorAccountName",
+    "counterpartyAccountName",
+    "executionDate",
+    "status"
+  ]
+}
